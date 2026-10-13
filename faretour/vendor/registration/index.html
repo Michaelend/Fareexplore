@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fare Tour</title>
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+                                integrity="sha512-ZnR2wlLbSbr8/c9AgLg3jQPAattCUImNsae6NHYnS9KrIwRdcY9DxFotXhNAKIKbAXlRnujIqUWoXXwqyFOeIQ==" 
+                                crossorigin="anonymous" referrerpolicy="no-referrer" 
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+                            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+                            crossorigin="anonymous" referrerpolicy="no-referrer" 
+    />
+
+    <style>
+        body{
+            background-color: whitesmoke;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid overall_container">
+       <div class="v_reg_container container">
+            <div class="header">
+                &larr;
+            </div>
+            <div class="reg_form">
+                <h4>Personal details</h4><br>
+                <form action="">
+                    <div class="reg_layout">
+                        <label for="">Full name</label><br>
+                        <input type="text">
+                    </div>
+                    <div class="reg_layout">
+                        <label for="">Phone number</label>
+                        <input type="text" placeholder="+ 234">
+                    </div>
+                    <div class="reg_layout">
+                        <label for="">Email</label>
+                        <input type="text">
+                    </div>
+                </form>
+            </div>
+            <div class="store_form">
+                <h4>Store details</h4>
+                <form action="">
+                    <div class="up">
+                        <div class="reg_layout">
+                            <small>Upload logo</small><br>
+                            <label for="up_pic"><button type="button"><i class="fa-solid fa-circle-plus"></i></button></label>
+                            <input type="file" id="up_pic" style="display: none;">
+                        </div>
+                        <div class="reg_layout">
+                            <small>Upload banner</small><br>
+                            <label for="up_banner"><button type="button" style="width: 147px;"><i class="fa-solid fa-circle-plus"></i></button></label>
+                            <input type="file" id="up_banner" style="display: none;">
+                        </div>
+                    </div>
+                    <div class="reg_layout">
+                        <label for="">Resturant name</label>
+                        <input type="text">
+                    </div>
+                    <div class="reg_layout">
+                        <label for="">Description</label>
+                        <input type="text">
+                    </div>
+                    <div class="reg_layout">
+                        <label for="">Address</label>
+                        <input type="text">
+                    </div>
+                    <input type="checkbox">&nbsp;<label for="">I accept Terms & Conditions/Privacy policy</label>
+                    <button type="submit" id="submitBtn">Submit</button>
+                </form>
+            </div>
+       </div>
+    </div>
+   
+</body>
+
+</html>

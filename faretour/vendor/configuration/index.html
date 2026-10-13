@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fare Tour</title>
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+                                integrity="sha512-ZnR2wlLbSbr8/c9AgLg3jQPAattCUImNsae6NHYnS9KrIwRdcY9DxFotXhNAKIKbAXlRnujIqUWoXXwqyFOeIQ==" 
+                                crossorigin="anonymous" referrerpolicy="no-referrer" 
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+                            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+                            crossorigin="anonymous" referrerpolicy="no-referrer" 
+    />
+
+    <style>
+        body{
+            background-color: whitesmoke;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="v_profile_container">
+       <div class="banner">
+            <br><br><br><br><br>
+            <div class="r">R</div>
+       </div>
+       <br><br>
+       <div class="container">
+            <div class="actionBtns">
+                <button>Restaurant detail</button><button class="active">Configuration</button>
+            </div>
+            <div class="form">
+                <h4>Edit profile</h4>
+                <form action="">
+                    <div class="up">
+                        <div class="reg_layout">
+                            <small>Upload logo</small><br>
+                            <label for="up_pic"><button type="button"><i class="fa-solid fa-circle-plus"></i></button></label>
+                            <input type="file" id="up_pic" style="display: none;">
+                        </div>
+                        <div class="reg_layout">
+                            <small>Upload banner</small><br>
+                            <label for="up_banner"><button type="button" style="width: 150px;"><i class="fa-solid fa-circle-plus"></i></button></label>
+                            <input type="file" id="up_banner" style="display: none;">
+                        </div>
+                    </div>
+                    <div class="new_food">
+                        <h4>Add new food <span>+</span></h4>
+                        <select name="" id="">
+                            <option value="">Select menu</option>
+                            <option value="">Rice</option>
+                            <option value="">Meat</option>
+                            <option value="">Bakeries</option>
+                        </select>
+                        <div class="add_photos">
+                            <button><div class="addPic">+Add Photo</div></button>
+                            <button><div class="addPic">+Add Photo</div></button>
+                            <button><div class="addPic">+Add Photo</div></button>
+                        </div>
+                        <h5>Description</h5>
+                        <div class="description">
+                            <span>Name:</span><br>
+                            <span>Price:</span><br>
+                            <span>Details:</span>
+                        </div>
+                    </div>
+                    <button>Upload</button>
+                </form>
+            </div>
+        </div>
+        <br><br>
+    </div>
+   
+</body>
+
+</html>

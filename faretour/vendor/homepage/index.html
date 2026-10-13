@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fare Tour</title>
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+                                integrity="sha512-ZnR2wlLbSbr8/c9AgLg3jQPAattCUImNsae6NHYnS9KrIwRdcY9DxFotXhNAKIKbAXlRnujIqUWoXXwqyFOeIQ==" 
+                                crossorigin="anonymous" referrerpolicy="no-referrer" 
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+                            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+                            crossorigin="anonymous" referrerpolicy="no-referrer" 
+    />
+
+    <style>
+        body{
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="v_home_container container">
+        <div class="header">
+            <img src="../../assets/images/bars.png" height="24px" width="32px" alt="" id="bars_icon" onclick="open_side_nav()" style="cursor: pointer;">
+            <div id="logo">
+                <span id="fare">Fare</span>
+                <span id="tour">tour</span>
+            </div>
+            <img src="../../assets/images/cart.png" height="32px" width="32px" id="cart_icon" alt="">
+        </div>
+        <div class="location">
+            <small>Location</small><br>
+            <span>Enugu State</span>
+        </div>
+        <div class="search">
+            <div class="inp_grp">
+                <img src="../../assets/images/Search.png" alt="">
+                <input type="text" placeholder="Search food">
+            </div>
+        </div>
+        <div class="nav">
+            <div class="nav_item">Beans</div>
+            <div class="nav_item">Swallow</div>
+            <div class="nav_item">Rice</div>
+            <div class="nav_item">Meat</div>
+        </div>
+        <div class="stores">
+            <h3>Restaurants in your City</h3>
+            <div class="store_lay">
+                <div class="cover_photo"></div>
+                <div class="name">Roban Stores</div>
+                <div class="description">Foods that will make your day</div>
+            </div>
+            <div class="store_lay">
+                <div class="cover_photo"></div>
+                <div class="name">Roban Stores</div>
+                <div class="description">Foods that will make your day</div>
+            </div>
+            <div class="store_lay">
+                <div class="cover_photo"></div>
+                <div class="name">Roban Stores</div>
+                <div class="description">Foods that will make your day</div>
+            </div>
+            <div class="store_lay">
+                <div class="cover_photo"></div>
+                <div class="name">Roban Stores</div>
+                <div class="description">Foods that will make your day</div>
+            </div>
+        </div>
+    </div>
+    <div class="side_naav" id="side_naav">
+        <span id="close_side_nav" onclick="close_side_nav()" style="cursor: pointer;">X</span>
+        <div class="side_nav">
+            <div class="header">
+                <div class="r">R</div>
+                <div class="name">
+                    <span>Roban stores</span><br>
+                    <small>Food that will make your day</small>
+                </div>
+            </div>
+            <div class="menu">
+                <a href="../dashboard/index.html"><div class="menu_item">Dashboard</div></a>
+                <a href="../menu/index.html"><div class="menu_item">Food Menu</div></a>
+                <a href="../orders/index.html"><div class="menu_item">View Orders</div></a>
+                <a href="../help/index.html"><div class="menu_item">Help Center</div></a>
+                <div class="menu_item">Delete Store</div>
+            </div>
+            <div class="logo">Fare tour</div>
+        </div>
+    </div>
+   
+    <script>
+        function open_side_nav(){
+            let side_nav = document.getElementById("side_naav")
+            side_nav.style.display = "block";
+        }
+        function close_side_nav(){
+            let side_nav = document.getElementById("side_naav")
+            side_nav.style.display = "none";
+        }
+    </script>
+</body>
+
+</html>

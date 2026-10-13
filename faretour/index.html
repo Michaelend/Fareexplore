@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fare Tour</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+                                integrity="sha512-ZnR2wlLbSbr8/c9AgLg3jQPAattCUImNsae6NHYnS9KrIwRdcY9DxFotXhNAKIKbAXlRnujIqUWoXXwqyFOeIQ==" 
+                                crossorigin="anonymous" referrerpolicy="no-referrer" 
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+                            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+                            crossorigin="anonymous" referrerpolicy="no-referrer" 
+    />
+
+    <style>
+        body{
+            background-color: #3F612D;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid auth">
+        <div class="row">
+            <div class="col-md-4 auth-lhs">
+                <div class="forkpic">
+                    <div class="fjfu">
+                        <h2>Food Just For You</h2>
+                    </div>
+                    <!-- <img src="assets/images/fork.png" alt="" width="80%"> -->
+                    
+                </div>
+                <button onclick="get_started()">Get Started</button>
+            </div>
+            <div class="col-md-8 auth-rhs">
+                <div class="signupas">
+                    <h2>Sign Up As</h2>
+                    <div class="sua-btns">
+                        <br><br>
+                        <a href=""><button>Vendor</button></a><br>
+                        <a href="customer_signup/index.html"><button>Customer</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="signupas-modal" id="sua_modal">
+                <h2>Sign Up As</h2>
+                <div class="sua-btns">
+                    <br><br>
+                    <button>Vendor</button><br>
+                    <a href="customer_signup/index.html"><button>Customer</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function get_started(){
+        let sua_modal = document.getElementById("sua_modal")
+        sua_modal.style.display = "block"
+
+        if(!sua_modal){
+            sua_modal.style.display = "none"
+        }
+    }
+</script>
+</html>
